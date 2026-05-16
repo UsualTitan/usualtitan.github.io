@@ -2,3 +2,6 @@ title: "Cyber stories"
 url: "https://usualtitan.github.io"
 author: "UsualTitan"
 theme: jekyll-theme-hacker
+header_pages:
+  - index.md
+  - writeups.md
