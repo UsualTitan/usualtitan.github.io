@@ -1,9 +1,15 @@
-<header>
-  <h1>{{ site.title | default: site.github.repository_name }}</h1>
-  <p>{{ site.description | default: site.github.project_tagline }}</p>
-  <!-- Add your custom links here -->
-  <nav>
-    <a href="{{ site.baseurl }}/">Home</a> |
-    <a href="https://github.com">GitHub</a>
-  </nav>
-</header>
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link
+      rel="stylesheet"
+      href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}"
+    />
+  </head>
+  <body>
+    {% include header.html %}
+    <div class="container">{{ content }}</div>
+  </body>
+</html>
