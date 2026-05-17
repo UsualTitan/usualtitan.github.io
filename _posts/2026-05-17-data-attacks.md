@@ -15,6 +15,22 @@ This is a classic example of a **training-time attack**: instead of tampering wi
 
 ---
 
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Understanding the Challenge](#understanding-the-challenge)
+  - [The Setup](#the-setup)
+  - [The Objective](#the-objective)
+- [What is a Label Flipping Attack?](#what-is-a-label-flipping-attack)
+- [Attempt 1 — Flipping Everything](#attempt-1--flipping-everything-failed)
+- [Attempt 2 — Flipping 90% to Class 0](#attempt-2--flipping-90-to-class-0-partially-successful)
+- [Attempt 3 — Splitting Flips Between Two Classes](#attempt-3--splitting-flips-between-two-classes-success)
+- [Full Attack Cell](#full-attack-cell)
+- [Key Takeaways](#key-takeaways)
+- [What's Next](#whats-next)
+
+---
+
 ## Understanding the Challenge
 
 ### The Setup
@@ -50,8 +66,6 @@ The API evaluates three specific criteria for a successful attack:
 | `class3_recall_maintained`   | Class 3 must still be detected correctly (model stays plausible) |
 
 This is subtle — the attack must **simultaneously** create confusion in two directions for Class 1, while keeping the rest of the model functional.
-
-`[SCREENSHOT — Baseline model confusion matrix showing clean performance]`
 
 ---
 
