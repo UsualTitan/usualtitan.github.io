@@ -2,6 +2,17 @@ title: "Cyber stories"
 url: "https://usualtitan.github.io"
 author: "UsualTitan"
 theme: jekyll-theme-hacker
+future: true
+collections:
+  writeups:
+    output: true
+    permalink: /writeups/:name/
+  blog:
+    output: true
+    permalink: /blog/:name/
+include:
+  - _writeups
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-feed

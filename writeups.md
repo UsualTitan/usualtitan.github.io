@@ -1,11 +1,12 @@
 ---
 layout: default
 title: "Write ups"
+permalink: /writeups/
 ---
 
 # Write ups
 
-{% for post in site.posts %}
+{% for writeup in site.writeups %}
 
-- [{{ post.title }}]({{ post.url }}) — {{ post.date | date: "%d/%m/%Y" }}
+- [{{ writeup.title }}]({{ writeup.url }}) — {{ writeup.date | date: "%d/%m/%Y" }}
   {% endfor %}

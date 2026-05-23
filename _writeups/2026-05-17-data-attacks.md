@@ -169,9 +169,9 @@ y_train_poisoned[indices_to_2] = 2
 
 **What this does geometrically:** The OvR classifier learns a boundary for each class. By poisoning the Class 1 region with Class 0 labels on one side and Class 2 labels on the other, we squeeze the learned Class 1 boundary until it barely exists. New Class 1 samples at inference time fall into either the Class 0 or Class 2 region.
 
-![image](/images/posts/2026-05-17-data-attacks/data-visualization-poisoned-model.png)
+![image](/images/writeups/2026-05-17-data-attacks/data-visualization-poisoned-model.png)
 
-![image](/images/posts/2026-05-17-data-attacks/confusion-mattrix-poisoned-model.png)
+![image](/images/writeups/2026-05-17-data-attacks/confusion-mattrix-poisoned-model.png)
 
 The final API response:
 
@@ -187,7 +187,7 @@ The final API response:
 }
 ```
 
-![image](/images/posts/2026-05-17-data-attacks/final-response-with-flag.png)
+![image](/images/writeups/2026-05-17-data-attacks/final-response-with-flag.png)
 
 ---
 
