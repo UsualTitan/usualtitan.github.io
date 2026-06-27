@@ -5,6 +5,7 @@ date: 2026-06-19
 description: "Step-by-step guide to building a Naive Bayes email spam classifier with Python. The model we will use in future articles to demonstrate AI/ML attacks."
 tags: [machine-learning, python, spam-detection, naive-bayes, nlp, beginner]
 permalink: /blog/building-spam-classifier-target-model/
+cover: /images/blog/2026-06-19-building-classifier-model-to-attack/cover.png
 ---
 
 Note : You can find the file and dataset [On my Github](https://github.com/UsualTitan/Model-Spam-ham-email-classifier)
