@@ -10,8 +10,6 @@ collections:
   blog:
     output: true
     permalink: /blog/:name/
-include:
-  - _writeups
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
